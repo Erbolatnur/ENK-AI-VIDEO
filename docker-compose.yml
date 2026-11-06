@@ -1,0 +1,8 @@
+services:
+  api:
+    build: ./backend
+    env_file: .env
+    ports: ["8000:8000"]
+    volumes: ["enk_data:/data"]
+volumes:
+  enk_data:
